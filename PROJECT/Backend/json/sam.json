@@ -4,6 +4,36 @@
     "text": "Hello! How can I assist you today?"
   },
   {
+    "title": "Fee Structure (2024-25 Onwards)",
+    "text": [
+      {
+        "Year": "I Year",
+        "Tuition Fee (₹)": 103000,
+        "Special Fee (₹)": 5500,
+        "NBA Fee (₹)": 3000
+      },
+      {
+        "Year": "II Year",
+        "Tuition Fee (₹)": 103000,
+        "Special Fee (₹)": 2500,
+        "NBA Fee (₹)": 3000
+      },
+      {
+        "Year": "III Year",
+        "Tuition Fee (₹)": 103000,
+        "Special Fee (₹)": 2500,
+        "NBA Fee (₹)": 3000
+      },
+      {
+        "Year": "IV Year",
+        "Tuition Fee (₹)": 103000,
+        "Special Fee (₹)": 2500,
+        "NBA Fee (₹)": 3000
+      }
+    ]
+  },
+
+  {
     "title": "Greeting",
     "text": "Hi there! What can I help you with?"
   },

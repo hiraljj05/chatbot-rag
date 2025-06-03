@@ -159,27 +159,35 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ messages, onClose, onSendMessag
                 style={{ minHeight: '0' }}
             >
                 {/* Dropdowns Section */}
+                {/* Dropdowns Section */}
                 <div className="border-b">
-                    <div className="flex items-center p-3 gap-2">
+                    <div className="flex items-center p-3 gap-4">
+                        {/* Upcoming Events Dropdown */}
                         <button
-                            on୍
                             onClick={() => setIsEventsOpen((prev) => !prev)}
-                            className="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                            className="flex items-center gap-1 bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
                             aria-label="Upcoming Events"
                         >
                             <ChevronDown size={20} className={`${isEventsOpen ? 'rotate-180' : ''}`} />
+                            <span className="text-sm font-medium">Upcoming Events</span>
                         </button>
+
+                        {/* Clubs Dropdown */}
                         <button
                             onClick={() => setIsClubsOpen((prev) => !prev)}
-                            className="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                            className="flex items-center gap-1 bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
                             aria-label="Clubs at KMIT"
                         >
                             <ChevronDown size={20} className={`${isClubsOpen ? 'rotate-180' : ''}`} />
+                            <span className="text-sm font-medium">Clubs</span>
                         </button>
                     </div>
+
                     {isEventsOpen && <EventsDropdown onSelect={onSendMessage} />}
-                    {isClubsOpen && <ClubsDropdown />}
+                    {isClubsOpen && <ClubsDropdown onSelect={onSendMessage} />}
+
                 </div>
+
 
                 {/* Function Boxes */}
                 <FunctionBoxes onSelect={onSendMessage} />

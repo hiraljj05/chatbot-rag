@@ -4,8 +4,13 @@ node_modules/
 # Or explicitly ignore Frontend node_modules if you want
 Frontend/node_modules/
 
+
 # Ignore Backend node_modules if exists
 PROJECT/Backend/node_modules/
+
+# Frontend/.next/
+# PROJECT/Frontend/.next/
+frontend/.next/
 
 # Ignore logs
 logs/

@@ -4,7 +4,7 @@ import { Calendar } from 'lucide-react';
 interface Event {
     id: string;
     name: string;
-    // date: string;
+    date: string;
     description: string;
     link?: string;
 }
@@ -19,16 +19,9 @@ const EventsDropdown: React.FC<EventsDropdownProps> = ({ onSelect }) => {
         {
             id: '1',
             name: 'Prakalp',
-            // date: '2025-05-10',
+            date: '2025-05-10',
             description: 'Join us for a day of innovation and technology showcases.',
-            // link: 'https://kmit.in/techfest',
         },
-        // {
-        //   id: '2',
-        //   name: 'Career Fair',
-        //   date: '2025-07-10',
-        //   description: 'Meet top employers and explore job opportunities.',
-        // },
     ];
 
     return (

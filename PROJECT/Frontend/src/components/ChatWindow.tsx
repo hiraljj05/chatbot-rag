@@ -4,6 +4,10 @@ import { Send, X, Mic, MicOff, ChevronDown, Loader, Maximize, Minimize } from 'l
 import EventsDropdown from './EventsDropdown';
 import ClubsDropdown from './ClubsDropdown';
 import FunctionBoxes from './FunctionBoxes';
+interface SpeechRecognitionErrorEvent extends Event {
+    error: string;
+    message: string;
+}
 
 interface Message {
     text: string;
@@ -56,11 +60,17 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ messages, onClose, onSendMessag
                 setIsRecording(false);
             };
 
-            recognitionRef.current.onerror = (event) => {
+            // recognitionRef.current.onerror = (event:  SpeechRecognitionErrorEvent) => {
+            //     console.error('Speech recognition error:', event.error);
+            //     setIsRecording(false);
+            //     onSendMessage('Sorry, I couldn’t understand your speech. Please try typing instead.');
+            // };
+
+            recognitionRef.current.onerror = (event: any) => {
                 console.error('Speech recognition error:', event.error);
                 setIsRecording(false);
-                onSendMessage('Sorry, I couldn’t understand your speech. Please try typing instead.');
-            };
+            }
+
 
             recognitionRef.current.onend = () => {
                 setIsRecording(false);

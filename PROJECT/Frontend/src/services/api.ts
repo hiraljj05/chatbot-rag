@@ -56,7 +56,7 @@
 //     }
 //   };
 
-const API_BASE_URL = 'https://2628-49-43-224-133.ngrok-free.app';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 
 interface BackendResponse {
     generated_response: string;

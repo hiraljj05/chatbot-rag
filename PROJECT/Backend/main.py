@@ -22,7 +22,13 @@ from supabase import create_client, Client
 from datetime import datetime
 from flask import send_from_directory
 app = Flask(__name__)
-CORS(app, origins=["https://chatbot-rag-brown.vercel.app", "https://2628-49-43-224-133.ngrok-free.app"])
+CORS(app, origins=[
+    "http://localhost:3000",
+    "https://chatbot-rag-brown.vercel.app",
+    "https://32d9-49-43-224-133.ngrok-free.app"
+], supports_credentials=True)
+CORS(app)  # <-- allows all origins
+
 # Set your Gemini API key
 GOOGLE_API_KEY = "AIzaSyBREwLriT1bsEYB0Ansnf-j83xqGZjrybY"
 genai.configure(api_key=GOOGLE_API_KEY)

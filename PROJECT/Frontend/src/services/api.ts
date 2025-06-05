@@ -56,7 +56,11 @@
 //     }
 //   };
 
-const API_BASE_URL = "https://bbd9-2405-201-c006-5003-c17a-bec3-7663-496d.ngrok-free.app" || "http://localhost:5000";
+const useNgrok = true;
+const API_BASE_URL = useNgrok
+  ? "https://your-ngrok-url"
+  : "http://localhost:5000";
+
 
 interface BackendResponse {
     generated_response: string;

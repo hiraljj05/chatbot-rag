@@ -180,7 +180,7 @@
 
 
 
-const API_BASE_URL = "https://8d6f-2409-40f0-1039-8b2f-f15e-f4de-9234-679e.ngrok-free.app";
+const API_BASE_URL = "https://8a0c-2401-4900-367a-7ff0-214c-31c5-6c92-4714.ngrok-free.app";
 
 interface BackendResponse {
     generated_response: string;

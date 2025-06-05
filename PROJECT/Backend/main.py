@@ -25,7 +25,7 @@ app = Flask(__name__)
 CORS(app, origins=[
     "http://localhost:3000",
     "https://chatbot-rag-brown.vercel.app",
-    "https://4d85-49-43-224-133.ngrok-free.app"
+    "https://bbd9-2405-201-c006-5003-c17a-bec3-7663-496d.ngrok-free.app"
 ], supports_credentials=True)
 CORS(app)  # <-- allows all origins
 

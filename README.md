@@ -34,7 +34,9 @@ A smart AI chatbot built for **Keshav Memorial Institute of Technology (KMIT)** 
 
 ## 🖼️ Chatbot Preview
 
+![Screenshot 2025-06-04 190815](https://github.com/user-attachments/assets/58e650f2-15b7-463a-83bc-4d5b167298a7)
 
+![Screenshot 2025-06-04 190823](https://github.com/user-attachments/assets/8c2d7e99-e4e6-4916-bb78-f02681c40e78)
 
 ---
 
@@ -54,4 +56,5 @@ A smart AI chatbot built for **Keshav Memorial Institute of Technology (KMIT)** 
 For questions or to see a demo, feel free to reach out!
 
 ---
+
 
